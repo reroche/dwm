@@ -11,17 +11,26 @@ static const char col_gray1[]       = "#1b1b22";
 static const char col_gray2[]       = "#2b303b";
 static const char col_gray3[]       = "#7e7e7e";
 static const char col_gray4[]       = "#c0c5ce";
-static const char col_cyan[]        = "#96b5b4";
-static const char col_red[]         = "#bf4e5c";
 static const char col_black[]       = "#1b1b22";
-static const char col_yellow[]      = "#ebeb8b";
 static const char col_white[]       = "#f6f6f6";
-static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray1, col_red,  col_red  },
-	[SchemeWarn] =	 { col_black, col_yellow, col_red },
-	[SchemeUrgent]=	 { col_white, col_red,    col_red },
+static const char col_red[]         = "#bf4e5c";
+static const char col_yellow[]      = "#ebeb8b";
+static const char col_green[]       = "#a3be8c";
+static const char col_cyan[]        = "#96b5b4";
+static const char col_blue[]        = "#658cb2";
+static const char col_magenta[]     = "#b48ead";
+static const char *colors[][10]     = {
+	/*               fg              bg          border   */
+	[SchemeNorm]   = { col_gray3,    col_gray1,  col_gray2 },       // \x01
+	[SchemeSel]    = { col_gray1,    col_red,    col_red  },
+	[SchemeWarn]   = { col_black,    col_yellow, col_red },
+	[SchemeUrgent] = { col_white,    col_red,    col_red },
+	[SchemeFive]   = { col_red,      col_gray1,  col_red },
+	[SchemeSix]    = { col_yellow,   col_gray1,  col_red },
+	[SchemeSeven]  = { col_green,    col_gray1,  col_red },
+	[SchemeEight]  = { col_cyan,     col_gray1,  col_red },
+	[SchemeNine]   = { col_blue,     col_gray1,  col_red },
+	[SchemeTen]    = { col_magenta,  col_gray1,  col_red },
 };
 
 /* tagging */
